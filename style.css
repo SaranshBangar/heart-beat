@@ -1,0 +1,59 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body
+{
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div
+{
+    width: 100px;
+    height: 100px;
+    rotate: 45deg;
+    background-color: red;
+    overflow: visible;
+    animation: beat infinite 0.5s alternate;
+}
+
+.circ-div
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.circ-div-1
+{
+    top: 0px;
+    right: 50px;
+}
+
+.circ-div-2
+{
+    top: -50px;
+    left: 0px;
+}
+
+@keyframes beat
+{
+    0%
+    {
+        transform: scale(0.9);
+    }
+
+    100%
+    {
+        transform: scale(1);
+    }
+}
